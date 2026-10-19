@@ -1,0 +1,18 @@
+flowchart TD
+    accTitle: Evidence and academic boundary
+    accDescr: Required evidence layers and hard stop against acceptance prediction
+
+    e1["CAS column + year"] --> e2["XinRui column + year"]
+    e2 --> e3["LetPub IF and reviews"]
+    e3 --> e4["Same-topic precedents with years"]
+    e4 --> e5["Recency weight: 3y > 4-7y > older"]
+    e5 --> stop{{"Never predict acceptance"}}
+    stop --> bands["sprint / solid / safe = strategy only"]
+
+    classDef primary fill:#2563eb,stroke:#1e40af,stroke-width:2px,color:#fff
+    classDef danger fill:#dc2626,stroke:#991b1b,stroke-width:2px,color:#fff
+    classDef success fill:#059669,stroke:#047857,stroke-width:2px,color:#fff
+
+    class e1,e2,e3,e4,e5 primary
+    class stop danger
+    class bands success

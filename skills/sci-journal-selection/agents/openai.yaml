@@ -1,0 +1,7 @@
+interface:
+  display_name: "SCI Journal Selection"
+  short_description: "CAS/XinRui/LetPub 选刊与近作证据"
+  default_prompt: "Use $sci-journal-selection to recommend SCI journals from my manuscript brief (default: 认新锐, skip Jev)."
+
+policy:
+  allow_implicit_invocation: true
